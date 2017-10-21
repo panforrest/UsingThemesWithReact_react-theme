@@ -22,9 +22,9 @@ class App extends Component {
 				</div>
 			</section>
 
-			<Section orient="orient-left" />
-			<Section orient="orient-left" />
-			<Section orient="orient-left" />
+			<Section title="Header1" orient="orient-left" />
+			<Section title="Header2" orient="orient-left" />
+			<Section title="Header3" orient="orient-left" />
 
 			<section className="wrapper style1 align-center">
 				<div className="inner">

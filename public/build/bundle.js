@@ -156,9 +156,9 @@ var App = function (_Component) {
 							_react2.default.createElement('img', { src: 'images/banner.jpg', alt: '' })
 						)
 					),
-					_react2.default.createElement(_components.Section, { orient: 'orient-left' }),
-					_react2.default.createElement(_components.Section, { orient: 'orient-left' }),
-					_react2.default.createElement(_components.Section, { orient: 'orient-left' }),
+					_react2.default.createElement(_components.Section, { title: 'Header1', orient: 'orient-left' }),
+					_react2.default.createElement(_components.Section, { title: 'Header2', orient: 'orient-left' }),
+					_react2.default.createElement(_components.Section, { title: 'Header3', orient: 'orient-left' }),
 					_react2.default.createElement(
 						'section',
 						{ className: 'wrapper style1 align-center' },
@@ -22143,79 +22143,54 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(7);
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+exports.default = function (props) {
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	var orient = props.orient || 'orient-right';
+	var containerClass = 'spotlight style1 ' + orient + ' content-align-left image-position-center onscroll-image-fade-in';
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Section = function (_Component) {
-	_inherits(Section, _Component);
-
-	function Section() {
-		_classCallCheck(this, Section);
-
-		return _possibleConstructorReturn(this, (Section.__proto__ || Object.getPrototypeOf(Section)).apply(this, arguments));
-	}
-
-	_createClass(Section, [{
-		key: 'render',
-		value: function render() {
-
-			var orient = this.props.orient || 'orient-right';
-			var containerClass = 'spotlight style1 ' + orient + ' content-align-left image-position-center onscroll-image-fade-in';
-
-			return _react2.default.createElement(
-				'section',
-				{ className: containerClass },
+	return _react2.default.createElement(
+		'section',
+		{ className: containerClass },
+		_react2.default.createElement(
+			'div',
+			{ className: 'content' },
+			_react2.default.createElement(
+				'h2',
+				null,
+				props.title
+			),
+			_react2.default.createElement(
+				'p',
+				null,
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.'
+			),
+			_react2.default.createElement(
+				'ul',
+				{ className: 'actions vertical' },
 				_react2.default.createElement(
-					'div',
-					{ className: 'content' },
+					'li',
+					null,
 					_react2.default.createElement(
-						'h2',
-						null,
-						'Magna etiam feugiat'
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.'
-					),
-					_react2.default.createElement(
-						'ul',
-						{ className: 'actions vertical' },
-						_react2.default.createElement(
-							'li',
-							null,
-							_react2.default.createElement(
-								'a',
-								{ href: '#', className: 'button' },
-								'Learn More'
-							)
-						)
+						'a',
+						{ href: '#', className: 'button' },
+						'Learn More'
 					)
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'image' },
-					_react2.default.createElement('img', { src: 'images/spotlight01.jpg', alt: '' })
 				)
-			);
-		}
-	}]);
-
-	return Section;
-}(_react.Component);
-
-exports.default = Section;
+			)
+		),
+		_react2.default.createElement(
+			'div',
+			{ className: 'image' },
+			_react2.default.createElement('img', { src: 'images/spotlight01.jpg', alt: '' })
+		)
+	);
+};
 
 /***/ })
 /******/ ]);
