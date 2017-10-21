@@ -156,79 +156,9 @@ var App = function (_Component) {
 							_react2.default.createElement('img', { src: 'images/banner.jpg', alt: '' })
 						)
 					),
-					_react2.default.createElement(_components.Section, { orient: 'left' }),
-					_react2.default.createElement(
-						'section',
-						{ className: 'spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'content' },
-							_react2.default.createElement(
-								'h2',
-								null,
-								'Tempus adipiscing'
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.'
-							),
-							_react2.default.createElement(
-								'ul',
-								{ className: 'actions vertical' },
-								_react2.default.createElement(
-									'li',
-									null,
-									_react2.default.createElement(
-										'a',
-										{ href: '#', className: 'button' },
-										'Learn More'
-									)
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'image' },
-							_react2.default.createElement('img', { src: 'images/spotlight02.jpg', alt: '' })
-						)
-					),
-					_react2.default.createElement(
-						'section',
-						{ className: 'spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in' },
-						_react2.default.createElement(
-							'div',
-							{ className: 'content' },
-							_react2.default.createElement(
-								'h2',
-								null,
-								'Pharetra etiam nulla'
-							),
-							_react2.default.createElement(
-								'p',
-								null,
-								'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.'
-							),
-							_react2.default.createElement(
-								'ul',
-								{ className: 'actions vertical' },
-								_react2.default.createElement(
-									'li',
-									null,
-									_react2.default.createElement(
-										'a',
-										{ href: '#', className: 'button' },
-										'Learn More'
-									)
-								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'image' },
-							_react2.default.createElement('img', { src: 'images/spotlight03.jpg', alt: '' })
-						)
-					),
+					_react2.default.createElement(_components.Section, { orient: 'orient-left' }),
+					_react2.default.createElement(_components.Section, { orient: 'orient-left' }),
+					_react2.default.createElement(_components.Section, { orient: 'orient-left' }),
 					_react2.default.createElement(
 						'section',
 						{ className: 'wrapper style1 align-center' },
@@ -22245,7 +22175,7 @@ var Section = function (_Component) {
 
 			return _react2.default.createElement(
 				'section',
-				{ className: containerClass, id: 'first' },
+				{ className: containerClass },
 				_react2.default.createElement(
 					'div',
 					{ className: 'content' },
